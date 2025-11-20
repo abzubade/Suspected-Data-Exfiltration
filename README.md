@@ -62,4 +62,27 @@ DeviceNetworkEvents
 
 ---
 
+## Response
+- **Contain the threat:** Isolate the device, block the external blob endpoint, terminate malicious PowerShell activity, and revoke the employee’s access sessions.
+- **Secure accounts & system:** Reset credentials, remove unauthorized tools/scripts, and collect forensic evidence for investigation.
+- **Prevent recurrence:** Implement DLP policies, enforce application control, restrict PowerShell usage, and strengthen monitoring for archive creation and outbound data transfers.
+---
+
+## 🛡️ MITRE ATT&CK Mapping
+
+| Tactic                 | Technique ID  | Technique Name                            | Why It Applies |
+|------------------------|---------------|---------------------------------------------|----------------|
+| Collection             | T1560.001     | Archive Collected Data: Archive via Utility | User zipped employee data using 7-Zip before transfer. |
+| Collection             | T1119         | Automated Collection                        | PowerShell script collected and packaged files automatically. |
+| Execution              | T1059.001     | PowerShell                                  | PowerShell was used to silently install 7-Zip and process data. |
+| Execution / Persistence| T1105         | Ingress Tool Transfer                       | 7-Zip installer was downloaded and executed silently. |
+| Exfiltration           | T1567.002     | Exfiltration Over Web Services: HTTPS       | Outbound connection to external blob storage over port 443. |
+| Exfiltration           | T1041         | Exfiltration Over C2 Channel                | Data transmitted outbound using an encrypted channel. |
+| Command & Control      | T1071.001     | Application Layer Protocol: Web Protocols   | Data sent to a RemoteURL using HTTPS. |
+
+---
+
+## Response
+
+
 

@@ -1,4 +1,4 @@
-## 🕵️‍♂️📤👤 **Threat Hunting Incident - Data Exfiltration from PIP'd Employee**
+## 🕵️‍♂️📤👤 **Threat Hunt Investigation - Data Exfiltration from PIP'd Employee**
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/7ef7cbd1-5837-4ee9-9ac4-a022391fd8c5" />
 
 ---
